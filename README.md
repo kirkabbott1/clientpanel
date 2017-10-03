@@ -1,7 +1,7 @@
 # CRMpinpoint
 
 ## Objective
-Create a client management tracking directory app.
+Create a client management tracking directory app using firebase and deploying on google cloud platform, redirecting to crmpinpoint.com
 
 ### Live Demo:
 

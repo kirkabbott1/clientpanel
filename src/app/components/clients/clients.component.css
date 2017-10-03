@@ -1,0 +1,36 @@
+.mobile-table tr td:first-of-type {
+    background-color: #000;
+    color: #fff;
+}
+.reg-table {
+    display: none;
+}
+table tbody {
+  border-bottom: 15px solid white;
+}
+.client-head {
+    text-align: center;
+}
+.total-head {  
+    text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+    .mobile-table {
+        display: none;
+    }
+    .reg-table {
+        display: block;
+    }
+    .client-head {
+        float: left;
+        display: inline-block;
+    }
+    .total-head {
+        float: right;
+        display: inline-block;
+    }
+    .total-head h5 {
+       margin-top: 10px;
+    }
+} 

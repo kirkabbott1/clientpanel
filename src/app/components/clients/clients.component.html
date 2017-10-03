@@ -1,0 +1,60 @@
+<!-- <div class="row">
+  <div class="client-head offset-md-3 col-md-3">
+    <h2>  Clients</h2>
+  </div>
+  <div class="total-head col-md-3">
+    <h5 class="text-muted">total Owed: {{totalOwed | currency:"USD":true}}</h5>
+  </div>
+</div> -->
+
+  <div class="client-head">
+    <h2>Clients</h2>
+  </div>
+  <div class="total-head">
+    <h5 class="text-muted">Total Owed: {{totalOwed | currency:"USD":true}}</h5>
+  </div>
+
+<table *ngIf="clients?.length > 0;else noClients" class="table reg-table table-striped" align="center">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Balance</th>
+      <th></th> 
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let client of clients">
+      <td>{{client.firstName}} {{client.lastName}}</td>
+      <td>{{client.email}}</td>
+      <td>{{client.balance | currency:"USD":true}}</td>
+      <td> <a href="" [routerLink]="['/client/'+client.$key]" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-o-right"></i> Details</a> </td>
+    </tr>
+  </tbody>
+</table> 
+
+<table *ngIf="clients?.length > 0;else noClients" class="table mobile-table table-striped">
+  <tbody *ngFor="let client of clients">
+    <tr>
+      <td>Name</td>
+      <td>{{client.firstName}} {{client.lastName}}</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>{{client.email}}</td>
+    </tr>
+    <tr>
+      <td>Balance</td>
+      <td>
+        {{client.balance | currency:"USD":true}}
+        <a href="" [routerLink]="['/client/'+client.$key]" class="btn btn-secondary pull-right btn-sm"><i class="fa fa-arrow-circle-o-right"></i> Details</a>
+      </td>
+    </tr>
+  </tbody>
+  <br>
+</table>
+
+<ng-template #noClients>
+  <hr>
+  <h5>No clients in system</h5>
+</ng-template>

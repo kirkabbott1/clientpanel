@@ -2,7 +2,7 @@
 
 ### Objective:
 
-create a crm app where users can keep track of their clients and how much they owe
+create a crm app where users can keep track of their clients and balances.
 
 ### Live Demo:
 

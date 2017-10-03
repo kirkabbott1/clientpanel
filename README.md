@@ -1,37 +1,86 @@
-# CRMpinpoint
+# CRMPinPoint
 
-## Objective
-Create a client management tracking directory app using firebase and deploying on google cloud platform, redirecting to crmpinpoint.com
+### Objective:
+
+create a crm app where users can keep track of their clients and how much they owe
 
 ### Live Demo:
 
-[CRMpinpoint](http://www.CRMpinpoint.com/)
+[CRMPinPoint](https://crmpinpoint.com/)
 
 ### Credits
 
-[Kirk Abbott](https://github.com/kirkabbott1)
+Kirk Abbott
 
-### Languages / Frameworks / Technologies used:
+### Technologies used in the Front-end:
 
-* HTML
-* CSS
-* BOOTSTRAP
-* Javascript
+* Html
+* Css
+* Bootstrap
+* JavaScript
 * Angular 4
-* Firebase
 
-## Description
-Users can create an account, login, and keep track of clients and balance totals.
+### Technologies used in the Back-end:
 
-## Usage
+* Angular Firebase
 
-1. Securely sign up and log in.
+### Screenshots
 
-2. Add clients and balances to keep track of.
+##### Register
+  ![home](images/register.png)
 
-3. If you are an Admin, change settings to allow new users and money balance according to preferences.
+##### Dashboard
 
-4. Click on client details to see their info
-5. Edit or delete client info/balance.
-6. click the pencil edit next to balance to update.
-7. go back to Dashboard with button or navbar.
+  ![home](images/logged_in_dashboard.png)
+
+##### Add New Client
+  ![home](images/add_new_client.png)
+
+##### Dashboard (Reflects New Client Added)
+
+  ![home](images/dashboard_new_client_added.png)
+
+##### Client Details Page
+  ![home](images/client_details.png)
+
+##### Client Details Page (Updated Balance)
+
+  ![home](images/client_details_update_balance.png)
+
+##### Edit Client Details Page (Initial State: balance on edit is disabled)
+
+  ![home](images/edit_client_update_phone_1.png)
+
+##### Edit Client Details Page (Update Phone Number)
+  ![home](images/edit_client_update_phone_1.png)
+
+##### Client Details Page (Updated Phone Number)
+
+  ![home](images/client_details_new_phone_added.png)
+
+##### Edit Settings Page (Initial State w/ disabled balance on edit)
+  ![home](images/edit_client_update_phone_1.png)
+
+##### Edit Settings Page (balance on edit is enabled)
+
+  ![home](images/edit_settings_enable_balance_on_edit.png)
+
+##### Client Details Page
+
+  ![home](images/edit_client_new_balance_2.png)
+
+##### Edit Client Details Page (Initial State: balance on edit is enabled)
+  ![home](images/edit_client_enable_balance_edit_1.png)
+
+##### Edit Client Details Page (Initial State: balance on edit is enabled w/ updated balance)
+
+  ![home](images/edit_client_enable_balance_edit_2.png)
+
+
+###  Code Snippets
+
+###### Back-end Examples:
+
+
+
+###### Front-end Examples:

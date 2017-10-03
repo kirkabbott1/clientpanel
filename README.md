@@ -33,5 +33,5 @@ Users can create an account, login, and keep track of clients and balance totals
 
 4. Click on client details to see their info
 5. Edit or delete client info/balance.
-6. click the pencil edit next to balance to update balance.
+6. click the pencil edit next to balance to update.
 7. go back to Dashboard with button or navbar.
